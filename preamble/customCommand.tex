@@ -8,17 +8,12 @@
 
 % Изменение формата подписей
 % Стиль номера таблицы/рисунка #1-Таблица/Рис. #2-номер
-\DeclareCaptionLabelFormat{custom}
-{%
-	#1 #2
-}
-% Стиль разделителя номера таблици/рисунка и названия таблицы/рисунка
-\DeclareCaptionLabelSeparator{custom}{$-$}
+\DeclareCaptionLabelFormat{custom}{#1 #2}
+% Стиль разделителя номера таблицы/рисунка и названия таблицы/рисунка
+\DeclareCaptionLabelSeparator{custom}{ --- }
 % Стиль формата #1-номер таблицы/рисунка #2-разделитель #3-название
-\DeclareCaptionFormat{custom}
-{%
-	#1 #2 #3
-}
+\DeclareCaptionFormat{custom}{#1#2#3}
+
 
 \captionsetup
 {
