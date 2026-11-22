@@ -10,7 +10,6 @@
 % Настройка шрифтов
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Times New Roman} % Шрифт для основного текста документа
-\setsansfont[Ligatures=TeX]{Arial}
 \setmonofont{Consolas} % Шрифт для кода
 
 % Настройка отступов от краев страницы
@@ -18,6 +17,10 @@
 
 \usepackage{titleps} % Колонтитулы
 \usepackage{subfig} % Для подписей к рисункам и таблицам
+\setcounter{secnumdepth}{0}
+\usepackage[subfigure]{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
 \usepackage{graphicx} % для вставки картинок
 \graphicspath{{./img/}} % Путь до папки с изображениями
 % Пакет для отрисовки графиков
@@ -34,7 +37,7 @@
 \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools} % ams пакеты для математики, табуляции
 \usepackage{nicematrix} % Особые матрицы pNiceArray
 
-\linespread{1.5} % Межстрочный интервал
+\linespread{1} % Межстрочный интервал
 \setlength{\parindent}{1.25cm} % Табуляция
 \setlength{\parskip}{0cm}
 
